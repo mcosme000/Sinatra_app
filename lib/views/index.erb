@@ -6,11 +6,11 @@
     <p>You can have a look at the rest of them from the tab "artists"</p>
 
     <% @artists.each do |artist| %>
-    <ul>
-      <li class="list">
-        <%= artist.last %>
-      </li>
-    </ul>
+    <div class="card">
+      <h3>
+      <%= artist %>
+      </h3>
+    </div>
     <% end %>
   </div>
 </section>

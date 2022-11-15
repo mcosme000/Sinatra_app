@@ -1,0 +1,20 @@
+<section>
+  <div class="container">
+
+    <a href="/artists/<%= @artist.first %>">
+    <h5>< back to <%= @artist.last %> albums</h5>
+    </a>
+
+    <h2>
+      <%= @album %>
+    </h2>
+
+    <ul>
+    <% @tracks.each_with_index do |track, index| %>
+    <li>
+      <%= index + 1 %> - <%= track %>
+    </li>
+    <% end %>
+    </ul>
+</div>
+</section>

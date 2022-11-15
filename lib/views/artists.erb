@@ -1,0 +1,20 @@
+<section>
+  <div class="container">
+
+    <a href="/artists_list/"><h5>< back to artists</h5></a>
+
+    <h2>
+      <%= @artist %>
+    </h2>
+
+    <ul>
+    <% @albums.each do |album| %>
+    <a href="/albums/<%= album.last %>">
+    <li>💿
+      <%= album.first %>
+    </li>
+    </a>
+    <% end %>
+    </ul>
+</div>
+</section>

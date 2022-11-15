@@ -1,13 +1,14 @@
 <section>
   <div class="container">
-    <h2>Artists list</h2>
-
-    <% @artists.each do |artist| %>
-    <ul>
-      <li class="list">
-        <%= artist %>
-      </li>
-    </ul>
-    <% end %>
+   <p>Have a look at all the artists</p>
+<ul>
+  <% @artists.each do |artist| %>
+  <a href="/artists/<%= artist.first %>">
+  <li class="list">
+    <%= artist.last %>
+  </li>
+  </a>
+  <% end %>
+</ul>
   </div>
 </section>
