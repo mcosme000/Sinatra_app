@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html { font-size: 62.5%; }
+body { font-size: 1.6rem; } /* =16px */
+h1 { font-size: 3rem; } /* =30px */
+h2 { font-size: 2.5rem; }
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.list {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  padding: 5rem 20rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  border-bottom: 0.01rem solid grey;
+}

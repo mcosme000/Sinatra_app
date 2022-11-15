@@ -3,9 +3,26 @@
   <head>
     <title>Sinatra App</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/application.css">
   </head>
   <body>
-    <h1>MY APP</h1>
+    <header>
+      <div class="container flex">
+        <a href="/">
+          <h1>Jukebox</h1>
+        </a>
+        <nav>
+          <ul>
+            <a href="/artists/">
+              <li>Artists</li>
+            </a>
+            <a href="">
+              <li>About</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <%= yield %>
   </body>
